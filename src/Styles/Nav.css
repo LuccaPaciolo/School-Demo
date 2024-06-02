@@ -1,0 +1,88 @@
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: white;
+    position: relative;
+}
+
+.logo {
+    width: 2em;
+    padding: .7em;
+    background-color: rgb(23, 183, 183);
+    border-radius: .6em;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5em;
+}
+
+.brand a  {
+    color:  rgb(23, 183, 183);
+    text-decoration: none;
+}
+
+.nav-link {
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+    flex-direction: column;
+    background-color: rgb(8, 54, 79);
+    padding: 3em;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    right: 0;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+.nav-link h3 {
+    color: rgb(22, 207, 217);
+    padding: .5em;
+    border-bottom: 1.5px solid rgb(22, 207, 217);
+}
+.search-icon {
+    width: 2em;   
+    border: 2px solid white; 
+    padding: .2em;
+    border-radius: 0em 1em 1em 0em;
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    border: none;
+    border-radius: 1em 0em 0em 1em;
+}
+.ham-icon {
+    width: 3em;
+    cursor: pointer;
+    align-self: right;    
+}
+
+.close-icon {
+    width: 3em;
+    cursor: pointer;
+}
+
+.login-button {
+    margin-top: 2em;
+    padding: .4em 2em;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(22, 207, 217);
+    border: none;
+}
