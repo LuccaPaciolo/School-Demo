@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --my-color1: rgb(83, 143, 235);
+    --my-color2: #050354;
+}
+
+.landing-page {    
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.landing-text h1 {
+    color: var(--my-color1)
+}
+
+.landing-text  .color-black {
+    color: var(--my-color2);
+}
+
+.landing-btn {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    background-color: var(--my-color1);
+    color: var(--my-color2);
+    border: none;
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+.landing-image img {
+    width: 100%;
+    border-radius: 2em 2em 2em 5em;
+    rotate: -5deg;
+
+}

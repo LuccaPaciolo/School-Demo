@@ -31,6 +31,8 @@ function Nav() {
              {showNavList && <img onClick={showNavListToggler} src={Close} alt="close-icon" className='close-icon'/> }
             </div>            
         </div>
+
+      
    
        { showNavList && <div className="nav-link">                         
             <form>

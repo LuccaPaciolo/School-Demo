@@ -1,0 +1,45 @@
+:root {
+    --my-color1: rgb(83, 143, 235);
+    --my-color2: #050354;
+}
+
+.impact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact-text {
+    color: var(--my-color2);
+    margin-top: 3em;
+}
+
+.impact-text span {
+    color: var(--my-color1);
+}
+
+.impact-arrows img {
+    width: 2em;
+}
+
+.impact-container {
+    margin: 1.5em;
+    border: 2px solid black;
+    padding: 1em;
+    margin: 10px;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.impact-container img {
+    width: 100%;
+}
+
+.impact-card-section {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-x: hidden;
+    white-space: hidden;
+}

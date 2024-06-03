@@ -1,0 +1,67 @@
+:root {
+    --my-color1: rgb(83, 143, 235);
+    --my-color2: #050354;
+}
+
+.thesis-container {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis-text h3 {
+    color: var(--my-color2);
+}
+
+.thesis-text h3 span {
+    color: var(--my-color1);
+}
+
+.circle {
+    border-radius: 50%;
+    margin-top: 3em;
+    padding: 8em;
+    border: 8px solid lightgray;
+    position: relative;
+
+}
+
+.circle-logo { 
+    width: 4em;
+    position: absolute;
+    left:7em;
+    padding: .4em;
+    background-color: rgb(20, 123, 179);
+    border-radius: .4em;
+}
+
+.student {
+    position: absolute;
+    right: -1em;
+    width: 4em;
+    background-color: #fff;
+    padding: 1em;
+    width: 6em;
+    border-radius: 30%;
+}
+
+.studies {
+    position: absolute;
+    left: -1em;
+    width: 4em;
+    background-color: #fff;
+    padding: .5em;
+    width: 6em;
+    border-radius: 30%;
+}
+
+.school-building {
+    position: absolute;
+    top: -2em;
+    left: 6em;
+    background-color: #fff;
+    padding: .5em;
+    width: 6em;
+    border-radius: 30%;
+}
+

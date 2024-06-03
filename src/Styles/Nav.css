@@ -7,9 +7,9 @@
 }
 
 .logo {
-    width: 2em;
+    width: 2.5em;
     padding: .7em;
-    background-color: rgb(23, 183, 183);
+    background-color: rgb(20, 123, 179);
     border-radius: .6em;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .brand a  {
-    color:  rgb(23, 183, 183);
+    color:  rgb(20, 123, 179);
     text-decoration: none;
 }
 
@@ -31,7 +31,7 @@
     height: 100vh;
     justify-content: start;
     flex-direction: column;
-    background-color: rgb(8, 54, 79);
+    background-color: rgb(3, 44, 66);
     padding: 3em;
     position: absolute;
     top: 5em;
@@ -47,9 +47,9 @@
 }
 
 .nav-link h3 {
-    color: rgb(22, 207, 217);
+    color: rgb(20, 123, 179);
     padding: .5em;
-    border-bottom: 1.5px solid rgb(22, 207, 217);
+    border-bottom: 1.5px solid rgb(20, 123, 179);
 }
 .search-icon {
     width: 2em;   
@@ -83,6 +83,6 @@ form input {
     font-weight: bold;
     font-size: 1rem;
     color: #fff;
-    background-color: rgb(22, 207, 217);
+    background-color: rgb(20, 123, 179);
     border: none;
 }

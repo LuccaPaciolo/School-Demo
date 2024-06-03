@@ -1,0 +1,40 @@
+:root {
+    --my-color1: rgb(83, 143, 235);
+    --my-color2: #050354;
+}
+
+.thesis-card-text {
+    padding-top: 3em;
+    text-align: center;
+}
+
+.thesis-card-text  span {
+    color: var(--my-color1)
+}
+
+.thesis-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+    background: linear-gradient(
+       45deg,#ffff 20%,#ffffff 40%,#78e6ee 100% 
+      );
+      background-size: 100% 300px; 
+      opacity: 0.7;
+      padding: 2em;
+      box-shadow: 0px 0px 10px rgba(2, 9, 12, 0.3);
+      border-radius: 1em;
+}
+
+.thesis-card:hover {
+    background: linear-gradient(
+        45deg, var(--my-color2) 20%,var(--my-color2)40%,var(--my-color2) 100% 
+       );
+       opacity: 1;
+       color: #ffff;
+    
+}
+
