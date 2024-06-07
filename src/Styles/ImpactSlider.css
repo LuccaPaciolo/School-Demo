@@ -15,7 +15,8 @@
 
 .slider-container {
     margin: 1.5em;
-    overflow-x: auto;
+    overflow-x: hidden;
+
   
 }
 
