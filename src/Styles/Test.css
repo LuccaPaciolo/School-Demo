@@ -1,0 +1,23 @@
+.slide-main-container {
+    margin: 2em;
+    width: 100%;
+    background-color: red;
+}
+
+.slider {
+    display: flex;
+    background-color: blueviolet;
+    flex-direction: row;
+    width: 20em;
+    margin: 0 auto;
+}
+
+.slide-image-container img {
+    width: 100%;
+    
+}
+
+.slide-text-container {
+    padding: 1em;
+    color: #fff;
+}

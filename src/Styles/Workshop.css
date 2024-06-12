@@ -1,0 +1,40 @@
+:root {
+    --my-color1: rgb(83, 143, 235);
+    --my-color2: #050354;
+}
+
+
+.workshop-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workshop {
+    text-align: center;
+    display: flex;
+    width: 15em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8em;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 3em;
+    margin: 1em;
+
+}
+
+.workshop img  {
+    width: 4em;
+}
+
+.workshop-text {
+    padding: 2em;
+    color: #fff;
+}
+
+.workshop-section {
+    background-color: var(--my-color1);
+}

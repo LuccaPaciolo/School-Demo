@@ -1,0 +1,94 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+}
+
+.section-1 {
+    background: url(../Images/background.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1-cover  {
+    background-color: rgba(28, 100, 142, 0.7);
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: .5em;
+    color: #fff;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.section-1 .section-1-cover .right-text h4 {
+    margin-top: 1em    
+}
+
+.section-1 .section-1-cover .right-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.section-2 .left-section .footer-logo {
+    display: flex;
+    gap: 1em;
+}
+
+.section-2 .left-section .footer-logo h2 {
+    font-weight: bolder;
+}
+
+.section-2 .right-section .right-section-text h5 {
+    font-weight: bolder;
+    margin-top: 3em;
+}
+
+
+.section-2 .right-section .social-icons {
+    border-bottom: 2px solid grey;
+    padding-bottom: 1em;
+}
+.section-2 .right-section .social-icons img {
+    width: 2em;
+}
+
+.section-2 .left-section .footer-logo-text {
+    margin-top: 1em;
+}
+.section-2 .left-section .footer-logo img {
+    width: 2em;
+    background-color: #000;
+    padding: .3em;
+    border-radius: .2em;
+}
+
+.section-3  {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;    
+}
+
+.section-3 .left-section p {
+    font-weight: bold;
+}
+
+.section-3 .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}   
+
+.section-3 .right-section a {
+    text-decoration: none;
+    color: rgb(83, 82, 82);
+}

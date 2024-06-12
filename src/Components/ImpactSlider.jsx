@@ -10,40 +10,34 @@ function ImpactSlider() {
 
   const [slide, setSlide] = useState(0)
 
-  const backSlide = ()=> {
-    setSlide ((prevSlide) => (prevSlide + 1)% ImpactData.length)
-  }
+  // const backSlide = ()=> {
+  //   setSlide ((prevSlide) => (prevSlide + 1)% ImpactData.length)
+  // }
 
-  const frontSlide = ()=> {
-    setSlide ((prevSlide)=>(prevSlide - 1 + ImpactData.length)% ImpactData.length)
-  }
+  // const frontSlide = ()=> {
+  //   setSlide ((prevSlide)=>(prevSlide - 1 + ImpactData.length)% ImpactData.length)
+  // }
 
   const callCardData = ImpactData.map((item)=> {
     return (
       <div>
-         <ImpactCard key = {item.id}
+         <ImpactCard key = {item}
          {...item}
          />
       </div>
     )
   })
 
-
-  console.log(slide);
-
  
   return (
     
     <div className='slider-container'>  
-      <div className="slider-card-text">
-            <h3>Follow us Impact untuk <span>Mereka</span></h3>
-      </div>       
+         
 
-      <div className="slider">
+      {/* <div className="slider">
       <div className="slider-arrows">
             <img onClick={frontSlide} src={LeftArrow} alt="left-arrow" />
-            <img onClick={backSlide} src={RightArrow} alt="right-arrow"/>
-            
+         
         </div> 
         <div
             className="slider-track"
@@ -52,9 +46,10 @@ function ImpactSlider() {
            {callCardData}
            
           </div>
-        
-      </div>
-      
+          <img onClick={backSlide} src={RightArrow} alt="right-arrow"/>
+            
+      </div> */}
+      {callCardData}
        
     </div>
   
