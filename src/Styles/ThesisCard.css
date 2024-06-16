@@ -38,3 +38,13 @@
     
 }
 
+
+
+@media only screen and (min-width:760px ){
+
+.thesis-card-section {
+    display: flex;
+}
+
+
+}

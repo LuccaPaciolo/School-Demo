@@ -9,12 +9,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+
+}    
 
 .workshop {
     text-align: center;
     display: flex;
-    width: 15em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -23,6 +23,8 @@
     border: 2px solid #fff;
     padding: 3em;
     margin: 1em;
+    width: 15em;
+    height: 15em;
 
 }
 
@@ -37,4 +39,20 @@
 
 .workshop-section {
     background-color: var(--my-color1);
+    text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+
+    .workshop-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .workshop-section {
+        padding: 3em;
+    }
 }

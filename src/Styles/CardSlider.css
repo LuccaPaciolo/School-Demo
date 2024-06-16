@@ -40,3 +40,51 @@
 .slider-button:hover {
   background-color: #0056b3;
 }
+
+
+@media only screen and (min-width: 760px) {
+
+  .slider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .slider-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 300px; /* Should be the same as slider width */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .slider-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-button:hover {
+    background-color: #0056b3;
+  }
+
+}

@@ -7,6 +7,7 @@ import Image2 from '../Images/im-2.jpg'
 import Image3 from '../Images/im-3.jpg' 
 import Image5 from '../Images/im-5.jpg' 
 import Image6 from '../Images/im-6.jpg' 
+import { useState, useEffect } from 'react';
 
 
 const data = [
@@ -15,40 +16,70 @@ const data = [
     image: Image2,
     name: 'ideria Samba ',
     position: 'Lorem Ipsum',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    text: 'do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 },
 {
     // id: 2,
     image: Image3,
     name: 'Jamal Mahdi',
     position: 'Lorem Ipsum',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    text: 'do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 },
 {
     // id: 3,
     image: Image5,
     name: 'Mahdi Samba',
     position: 'Lorem Ipsum',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    text: 'do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 },
 {
     // id: 4,    
     image: Image6,
     name: 'ideria Mahdi',
     position: 'Lorem Ipsum',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    text: 'do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 },
 
 ]
 
+
 function ImapctCard() {
+
+  const [slideNo, setSlideNo] = useState(1)
+  
   var settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow:slideNo,
     slidesToScroll: 1,
   };
+
+const [size, setSize] = useState(0)
+  useEffect(()=> {
+    const updateSize= ()=> {
+      setSize (window.innerWidth)
+    }; window.addEventListener('resize', updateSize)
+    updateSize()
+  
+  })
+
+useEffect(()=> {
+  const getSlideNumber = ()=> {
+    if(size > 600 && size < 760 ){
+      setSlideNo(2) 
+    } else if (size > 760 && size < 900) {
+      setSlideNo(3)
+    } else if (size > 900) {
+      setSlideNo (4)
+    } else {
+      setSlideNo(1)
+    }
+    
+  };
+  getSlideNumber()
+})
+
 
   return (
     <div className="impact-container">  

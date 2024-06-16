@@ -38,7 +38,9 @@ function Home() {
         <Thesis/>
         <div className="thesis-section">
           <h3 className='thesis-card-text'>Bagaiman <span>TESIS</span>  Bekerja</h3>
-          {CallThesisData}
+          <div className="thesis-card-section">
+            {CallThesisData}
+          </div>
         </div>    
         <div className="slider-card-text">
             <h3>Follow us Impact untuk <span>Mereka</span></h3>
@@ -51,8 +53,11 @@ function Home() {
           <div className="workshop-text">
             <h3>Taller</h3>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>          
-          {CallWorkshopData}  
+          </div>  
+          <div className="workshop-flex">
+          {CallWorkshopData}
+          </div>        
+          
         </div>          
           <LecturerCard/>     
           <Partners/>

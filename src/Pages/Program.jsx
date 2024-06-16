@@ -3,7 +3,7 @@ import React from 'react'
 function Program() {
   return (
     <div className='program-container'>
-        <p>Program Page</p>
+      <h1 style={{textAlign: 'center', color: 'Grey', marginTop: '1em'}}>Coming Soon...</h1>
     </div>
   )
 }

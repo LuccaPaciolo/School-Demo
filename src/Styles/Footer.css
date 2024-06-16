@@ -92,3 +92,64 @@
     text-decoration: none;
     color: rgb(83, 82, 82);
 }
+
+@media only screen and (min-width: 760px) {
+    
+    .section-1-cover  {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        padding: 3em;
+        gap: 6em;
+        
+    }
+    
+    .section-1 .section-1-cover .right-text h4 {
+        margin-top: 1em    
+    }
+    
+
+    .section-1 .section-1-cover .left-text{
+        margin-top: 1em  
+
+    }
+    .section-1 .section-1-cover .right-text a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .section-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5em;
+        padding: 1em 4em;
+    }
+    
+    .section-2 .right-section .social-icons {
+        border-bottom:  none;
+        float: right;
+    }
+
+     .section-2 .right-section .right-section-text {
+        text-align: right;
+     }
+    .section-2 .left-section .footer-logo {
+        display: flex;
+        gap: 1em;
+    }
+        
+    .section-3  {
+        display: flex;
+        flex-direction: row;
+        padding: 1em 4em;    
+        justify-content: space-between;
+        gap: 3em;
+    }
+    
+    .section-3 .right-section {
+        display: flex;
+        flex-direction: row;
+        margin: 0; 
+    }   
+    
+}

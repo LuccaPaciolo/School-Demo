@@ -1,0 +1,220 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em; 
+}
+
+.comp-logo {
+    display: flex; 
+    align-items: center;
+    justify-content: left;
+    margin: 2em 0em .8em 2em;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    padding: 2em;
+    background-color: var(--my-color1);
+}
+
+.top-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section form input {
+    border-radius: 0em;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.top-section form input:focus {
+    border: none;
+    outline: none;
+}
+
+.top-section form input[type='submit'] {
+    background-color: var(--my-color2);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-top: 1em;
+}
+
+.user-holder {
+    display: flex;
+    align-items: center;
+    border-radius: 0em;
+    background-color: #fff;
+}
+.password-holder {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+
+}
+
+.user-holder img {
+    width: 2em;
+    padding-left: .6em;
+}
+
+.password-holder img {
+    width: 2em;
+    padding-right: 1em;
+}
+
+.bottom-section {
+    padding: 2em;
+}
+
+.bottom-section :nth-child(1) {
+    color: var(--my-color1);
+    cursor: pointer;
+    line-height: 2em;
+}
+
+
+/*forgot password section */
+
+.forgot-password-section {
+   background-color: var(--my-color2);
+   color: #fff;
+   padding: 2em;
+   margin-top: 1em;
+}
+
+.forgot-password-section form {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.forgot-password-section form input {
+    padding: .7em;
+    margin-top: 1em;
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+.forgot-password-section form input:focus {
+    border: none;
+    outline: none;
+}
+
+.forgot-password-section form input[type='submit'] {
+    background-color: var(--my-color1);
+    color: var(--my-color2);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/* Styling forgot password section*/
+
+.sign-up-container {
+    margin-top: 1em;
+}
+
+.sign-up-section {
+    padding: 2em;
+}
+
+.sign-up-section .sign-up-text {
+    color: var(--my-color2);
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+
+.sign-up-text span {
+    color: var(--my-color1)
+}
+
+.sign-up-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-form input {
+    padding: 1em;
+    border: 1.2px solid var(--my-color1);
+    border-radius: 0;
+    margin: .5em 0em;
+}
+
+.sign-up-form input:focus {
+    outline-color: var(--my-color2);
+}
+
+.sign-up-form input[type='submit'] {
+    background-color: var(--my-color2);
+    color: #fff;
+    border: none;
+}
+
+@media only screen and (min-width: 760px) {
+    
+    
+    .login-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .comp-logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+       
+    }
+    
+    .bottom-section {
+        padding: 2em;
+        text-align: center;
+    }
+    
+    .bottom-section :nth-child(1) {
+        color: var(--my-color1);
+        cursor: pointer;
+        line-height: 2em;
+    }
+    
+    
+    /*forgot password section */
+    
+    
+    .forgot-password-section form input[type='submit'] {
+        background-color: var(--my-color1);
+        color: var(--my-color2);
+        font-weight: bold;
+        font-size: 1rem;
+        width: 9em;
+    }
+    
+    
+    /* Styling forgot password section*/
+
+    .sign-up-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .sign-up-form input {
+        margin: .5em 1em;
+    }
+    
+    .sign-up-form input[type='submit'] {
+        width: 15em;
+    }
+}

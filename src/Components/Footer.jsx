@@ -54,10 +54,10 @@ function Footer() {
             <p> Copyright &copy; {getYear} All Right Reserved</p>
             </div>
             <div className="right-section">
-                <a href="#">Community |</a>
-                <a href="#">Support |</a>
-                <a href="#">Company |</a>
-                <a href="#">Service |</a>
+                <a href="#">Community</a>
+                <a href="#">|Support</a>
+                <a href="#">|Company</a>
+                <a href="#">|Service</a>
             </div>
         </div>
     </div>

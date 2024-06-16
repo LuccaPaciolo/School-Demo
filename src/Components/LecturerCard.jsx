@@ -28,7 +28,10 @@ function LecturerCard() {
   return (
     <div className='lecturer-card-container'>
       <h2>Kata <span>Dosen</span></h2>
-        {FetchLecturerData}
+      <div className="lecturer-card">
+       {FetchLecturerData}
+      </div>
+     
     </div>
   )
 }

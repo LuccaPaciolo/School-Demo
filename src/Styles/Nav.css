@@ -1,88 +1,149 @@
-.nav-bar {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+.navbar-container {
+    padding: 1.5em 1.5em .5em 1.5em;
     background-color: white;
-    position: relative;
-}
-
-.logo {
-    width: 2.5em;
-    padding: .7em;
-    background-color: rgb(20, 123, 179);
-    border-radius: .6em;
+    display: flex;
+    gap: 3em;   
 }
 
 .brand {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    gap: .5em;
+    gap: 1em;
 }
 
-.brand a  {
-    color:  rgb(20, 123, 179);
+.brand a {
     text-decoration: none;
+    color: var(--my-color1);
 }
 
-.nav-link {
-    display: flex;
-    height: 100vh;
-    justify-content: start;
-    flex-direction: column;
-    background-color: rgb(3, 44, 66);
-    padding: 3em;
-    position: absolute;
-    top: 5em;
-    left: 0;
-    right: 0;
-}
-
-.nav-link a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    padding-top: 1em;
-}
-
-.nav-link h3 {
-    color: rgb(20, 123, 179);
+.brand img {
+    width: 2.5em;
+    background-color:var(--my-color1);
     padding: .5em;
-    border-bottom: 1.5px solid rgb(20, 123, 179);
-}
-.search-icon {
-    width: 2em;   
-    border: 2px solid white; 
-    padding: .2em;
-    border-radius: 0em 1em 1em 0em;
+    border-radius: .5em;
 }
 
-form {
+/*Styling for desktop view*/ 
+
+ .ham-control {
+    display: none;
+}
+
+.desktop-view .nav-links {
     display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 70vw;
 }
 
-form input {
-    border: none;
-    border-radius: 1em 0em 0em 1em;
-}
-.ham-icon {
-    width: 3em;
-    cursor: pointer;
-    align-self: right;    
+.desktop-view .nav-links a {
+    text-decoration: none;
 }
 
-.close-icon {
-    width: 3em;
-    cursor: pointer;
-}
-
-.login-button {
-    margin-top: 2em;
-    padding: .4em 2em;
-    font-weight: bold;
-    font-size: 1rem;
+.login {
+    background-color: var(--my-color1);
     color: #fff;
-    background-color: rgb(20, 123, 179);
-    border: none;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.desktop .nav-links a {
+    padding-top: 1em;
+    text-decoration: none;
+    color: var(--my-color1);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+.search form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.search form input {
+    padding: .7em;
+    width: 100%;
+    border: 2px solid var(--my-color1) 
+}
+
+.search img {
+    width: 2.7em;
+    cursor: pointer;
+    background-color: var(--my-color1);
+    padding: .7em;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+   
+    .ham-control {
+        display: block;
+    }
+
+    .ham-control img {
+        width: 3em;
+    }    
+    
+     .desktop-view .nav-links {
+        display: none;
+    }
+
+    .mobile-view .nav-links {
+        display: flex;
+        background-color: var(--my-color2);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3em 2em;
+        gap:1em;
+        width: 100vw;
+        height: 100vh;
+        justify-content: flex-start;
+        position: absolute;
+        top: 1;
+        left: 0;
+    }
+
+    
+    .mobile-view .nav-links a {
+        color: var(--my-color1);
+        text-decoration: none;
+    }
+
+    .login {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .mobile-view .search {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+    
+    .search form input {
+        padding: 1em;
+        width:100%;
+        border: none;
+        outline: none;
+    }
+    
+    .search img {
+        width: 3em;
+        cursor: pointer;
+        padding: .7em;
+    }
+    
 }
