@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import Close from '../Images/close.svg'
 import '../Styles/Nav.css'
 import {useState} from 'react'
+import { Fade, Slide } from 'react-awesome-reveal'
+
 
 function Nav() {
 
@@ -22,7 +24,7 @@ function Nav() {
   console.log(removeNav);
   
   return (
-    <div className='navbar-container'>
+   <Fade duration={2000}><div className='navbar-container'>
         <div className="brand">
           <Link onClick={removeNav} to='/'><img src={Logo} alt="logo" /></Link> 
           <Link onClick={removeNav} to='/'><h3>Beranda</h3></Link> 
@@ -48,6 +50,7 @@ function Nav() {
         
 
     </div>
+    </Fade> 
   )
 
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import LecturerData from '../Data/LecturerData.js'
 import '../Styles/LecturerCard.css'
-
+import { Fade } from 'react-awesome-reveal'
 function LecturerCard() {
 
   const FetchLecturerData = LecturerData.map((item)=> {
@@ -26,13 +26,13 @@ function LecturerCard() {
     )
   })
   return (
-    <div className='lecturer-card-container'>
+    <Fade duration={2000}><div className='lecturer-card-container'>
       <h2>Kata <span>Dosen</span></h2>
       <div className="lecturer-card">
        {FetchLecturerData}
       </div>
      
-    </div>
+    </div></Fade>
   )
 }
 

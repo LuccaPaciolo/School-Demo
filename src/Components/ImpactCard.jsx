@@ -8,7 +8,7 @@ import Image3 from '../Images/im-3.jpg'
 import Image5 from '../Images/im-5.jpg' 
 import Image6 from '../Images/im-6.jpg' 
 import { useState, useEffect } from 'react';
-
+import { Fade } from 'react-awesome-reveal';
 
 const data = [
 {
@@ -84,7 +84,7 @@ useEffect(()=> {
   return (
     <div className="impact-container">  
       
-        <div className='impact-card'> 
+       <Fade duration={2000}> <div className='impact-card'> 
         <Slider {...settings}>        
           {data.map((item)=> (
             <div className='card-slides'>
@@ -96,11 +96,11 @@ useEffect(()=> {
                 <h3>{item.position}</h3>
                 <p>{item.text}</p>
               </div>
-            </div>
+            </div> 
             
           ))}
         </Slider>
-        </div>
+        </div></Fade>
       
       
     </div>
