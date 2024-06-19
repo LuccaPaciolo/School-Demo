@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import '../Styles/Login.css'
 import { useState } from 'react'
 import Footer from '../Components/Footer'
+import { Slide, Fade } from 'react-awesome-reveal'
 
 function Login() {
 
@@ -20,32 +21,32 @@ function Login() {
   return (
     <div className='login-container'>      
         <div className="comp-logo">
-           <h2>Tesis</h2>
+           <Fade><h2>Tesis</h2></Fade>
          </div>      
-      <div className="login-section">
+     <Fade> <div className="login-section">
         <div className="top-section">
-          <form>
-            <div className="user-holder">
+         <form>
+         <Slide direction='up'> <div className="user-holder">
              <img src={UserIcon} alt="user" />
-             <input type="text" placeholder='User-name' /> 
+           <input type="text" placeholder='User-name' /> 
            
-            </div>
-            <div className="password-holder">
+            </div></Slide>
+            <Slide direction='up'><div className="password-holder">
               <input  type={!showPass? 'text': 'password'} placeholder='Password'/>
               {showPass && <img onClick={showToggler} src={ShowPass} alt="show-password" />}
               {!showPass &&<img onClick={showToggler} src={HidePass} alt="hide-password" />}
-            </div>          
+            </div> </Slide>         
            
-            <input type="submit" value="submit" placeholder='submit'/>
+            <Slide direction='up'><input type="submit" value="submit" placeholder='submit'/></Slide>
           </form>
         </div>
-        <div className="bottom-section">
+        <Slide duration={2000}><div className="bottom-section">
           <Link to ='/ForgotPassword'><p>Forgot password</p></Link>  
           <p>Don't have a accoout?  <span> <Link to =
           '/CreateAccount'>Sign up</Link> </span></p>
-        </div>     
+        </div>   </Slide>  
        
-      </div>
+      </div></Fade>
       <Footer/>
     </div>
 

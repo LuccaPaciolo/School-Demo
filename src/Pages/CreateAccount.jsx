@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 function CreateAccount() {
 
@@ -27,11 +28,11 @@ function CreateAccount() {
 
   return (
     <div className='sign-up-container'>
-         <div className="sign-up-section">
+       <Fade duration={2000}>  <div className="sign-up-section">
           <div className="sign-up-text">
-            <p>Don't have an account with us? Fill out the form below to <span>create one.</span></p>
+            <Slide direction='up' duration={2000}><p>Don't have an account with us? Fill out the form below to <span>create one.</span></p></Slide>
           </div>
-          <div className="sign-up-form">
+          <Slide direction='left' duration={2000}><div className="sign-up-form">
             <form>           
               <input onChange={formControl} type="text" name='firstName'placeholder='First-name' />
               <input onChange={formControl} type="text" name='lastName' placeholder='Last-name' />
@@ -43,11 +44,11 @@ function CreateAccount() {
              <input onChange={formControl} name='confirmPassword'type="text" placeholder='confirm-password' />  
               <input type="submit" value="Create Account" />
             </form>
-          </div>
+          </div></Slide>
   
   
 
-        </div>
+        </div></Fade>
     </div>
   )
 }

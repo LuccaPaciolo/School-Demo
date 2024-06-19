@@ -24,7 +24,7 @@ function Nav() {
   console.log(removeNav);
   
   return (
-   <Fade duration={2000}><div className='navbar-container'>
+ <div className='navbar-container'>
         <div className="brand">
           <Link onClick={removeNav} to='/'><img src={Logo} alt="logo" /></Link> 
           <Link onClick={removeNav} to='/'><h3>Beranda</h3></Link> 
@@ -34,7 +34,7 @@ function Nav() {
              {showNav && <img onClick={showNavToggler} src={Ham} alt="hamburger" />}
            {!showNav && <img onClick={showNavToggler} src={Close} alt="close" />}
           </div>
-           <div className="nav-links">
+           <div className="nav-links show-nav">
             <div className="search">
             <Link onClick={removeNav} to='/Program'>Program</Link>
               <form>             
@@ -46,11 +46,12 @@ function Nav() {
             
             <Link onClick={removeNav} className='login' to='/Login'>Login</Link>
           </div>
+          
         </div>
         
 
     </div>
-    </Fade> 
+   
   )
 
 }

@@ -113,8 +113,8 @@
         position: absolute;
         top: 1;
         left: 0;
+        z-index: 100;   
     }
-
     
     .mobile-view .nav-links a {
         color: var(--my-color1);
